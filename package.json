@@ -1,0 +1,52 @@
+{
+  "name": "medtracker",
+  "version": "1.0.0",
+  "description": "Medicine tracker system",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "node server",
+    "start-dev": "webpack -w & nodemon server.js",
+    "start-server": "nodemon server -e html,js,scss --ignore public --ignore client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katieescoto/MedTracker.git"
+  },
+  "keywords": [
+    "medicine",
+    "tracker",
+    "react"
+  ],
+  "author": "Katie Escoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katieescoto/MedTracker/issues"
+  },
+  "homepage": "https://github.com/katieescoto/MedTracker#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "@babel/preset-env": "^7.11.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.0",
+    "pg-hstore": "^2.3.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "sequelize": "^6.3.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-react": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "babel-polyfill": "^6.26.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
